@@ -111,7 +111,7 @@ async upload() {
           let path=await ctx.helper.MD5encode(String(Date.now()));
           let typeArray=part.mime.split('/');
           let type=typeArray[typeArray.length-1];
-          let name='ysxbdms/projects/'+path+`.${type}`;
+          let name='ysxbdms/projects/'+path+`.${type}`;//the upload links
           try {
               result = await ctx.cos.putStream(name,part);
           } catch (err) {
