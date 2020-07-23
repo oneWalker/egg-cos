@@ -1,5 +1,5 @@
 {
-  "name": "@shuang6/egg-cos",
+  "name": "@onewalker/egg-cos",
   "version": "0.0.2-rc",
   "description": "tencent cloud cos plugin for egg",
   "eggPlugin": {
@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuang6/egg-cos.git"
+    "url": "https://github.com/onewalker/egg-cos.git"
   },
   "bugs": {
-    "url": "https://github.com/shuang6/egg-cos/issues"
+    "url": "https://github.com/onewalker/egg-cos/issues"
   },
-  "homepage": "https://github.com/shuang6/egg-cos#readme",
-  "author": "shuang6",
+  "homepage": "https://github.com/onewalker/egg-cos#readme",
+  "author": "LIU",
   "license": "MIT"
 }

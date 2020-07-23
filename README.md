@@ -6,6 +6,8 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
+[npm-url]: https://npmjs.org/package/@onewaler/egg-cos
+[download-url]: https://npmjs.org/package/@onewalker/egg-cos
 <!--
 Description here.
 -->
@@ -53,7 +55,7 @@ You can aquire tencent cloud cos instance on `app` or `ctx`.
 ```js
 
 // upload a file in controller
-// 1.File Mode：The file is temporarily stored as cache in your server during the process;
+- File Mode：The file is temporarily stored as cache in your server during the process;
 const path = require('path');
 const Controller = require('egg').Controller;
 
@@ -82,8 +84,7 @@ module.exports = class extends Controller {
   }
 };
 
-// upload a file in controller
-// 2.upload by Stream：The file is transfered to cloud server directly, not go through your server;
+- upload by Stream：The file is transfered to cloud server directly, not go through your server;
 const Controller = require('egg').Controller;
 const sendToWormhole = require('stream-wormhole');
 async upload() {
@@ -131,7 +132,7 @@ async upload() {
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/shuang6/egg-cos/issues).
+Please open an issue [here](https://github.com/onewalker/egg-cos/issues).
 
 ## License
 
