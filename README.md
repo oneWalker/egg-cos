@@ -1,20 +1,24 @@
 # egg-cos
 
 [![NPM version][npm-image]][npm-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
+<!--[![Test coverage][codecov-image]][codecov-url]-->
+<!--[![David deps][david-image]][david-url]-->
+<!--[![Known Vulnerabilities][snyk-image]][snyk-url]-->
 [![npm download][download-image]][download-url]
 
-[npm-url]: https://npmjs.org/package/@onewaler/egg-cos
+[npm-url]: https://npmjs.org/package/@onewalker/egg-cos
 [download-url]: https://npmjs.org/package/@onewalker/egg-cos
-<!--
-Description here.
--->
+
+腾讯云存储在eggjs框架中的使用。
+
+This is a plugin for tencent cos(cloud object storage) implement in [eggjs](https://eggjs.org/en/tutorials/index.html)( a Node.js framework published by Alibaba Group). It is achieved the two ways,file modle and stream model, in uploading the files.
+Primarily, I tired to merge my addtion of stream ways to the other project, while it isn't respoded by the owner. I decide to publish it to the community.
 
 ## Install
 
 ```bash
+
+   npm install @onwalker/egg-cos
 
 ```
 
