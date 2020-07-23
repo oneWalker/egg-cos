@@ -24,7 +24,7 @@ Description here.
 // {app_root}/config/plugin.js
 exports.cos = {
   enable: true,
-  package: 'egg-cos'
+  package: '@onewalker/egg-cos'
 };
 ```
 
