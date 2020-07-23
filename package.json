@@ -1,6 +1,6 @@
 {
   "name": "@onewalker/egg-cos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "tencent cloud cos plugin for egg",
   "eggPlugin": {
     "name": "cos"
