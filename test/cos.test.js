@@ -20,4 +20,13 @@ describe('test/cos.test.js', () => {
       .expect('hi, cos')
       .expect(200);
   });
+
+  it('should upload a file to COS', async () => {
+  });
+
+  it('should upload a stream to COS', async () => {
+  });
+
+  it('should fail to upload a file with invalid credentials', async () => {
+  });
 });

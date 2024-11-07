@@ -1,0 +1,32 @@
+name: Publish Package
+
+on:
+  push:
+    branches: [ cur-publish]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Publish to npmjs
+      run: npm publish --//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+  
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        registry-url: https://npm.pkg.github.com
+        
+    - name: Publish to GitHub Packages
+      run: npm publish
+      env:
+          NODE_AUTH_TOKEN: ${{secrets.GIT_TOKEN}}

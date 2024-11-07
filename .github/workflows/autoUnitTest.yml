@@ -1,0 +1,34 @@
+name: Run tests
+
+on:
+  push:
+    branches: [ cur-publish, master ]
+  pull_request:
+    branches: [ master, cur-publish ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 14.x, 16.x, 18.x, 20.x]
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: Run Unit Tests
+      run: npm run ci
+
+    - name: Code Coverage
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
