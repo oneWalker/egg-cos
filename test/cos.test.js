@@ -1,21 +1,18 @@
 'use strict';
 
 const mock = require('egg-mock');
-const assert = require('assert');
-const fs = require('fs');
-const path = require('path');
 
 describe('test/cos.test.js', () => {
-   let app;
-   beforeAll(() => {
-     app = mock.app({
-       baseDir: "apps/cos-test",
-     });
-     return app.ready();
-   });
+  let app;
+  before(() => {
+    app = mock.app({
+      baseDir: 'apps/cos-test',
+    });
+    return app.ready();
+  });
 
-   afterAll(() => app.close());
-   afterEach(mock.restore);
+  after(() => app.close());
+  afterEach(mock.restore);
 
   it('should GET /', () => {
     return app.httpRequest()
