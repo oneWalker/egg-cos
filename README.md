@@ -1,9 +1,15 @@
 # egg-cos
+[![简体中文][zh-image]][zh-url]
+
+## 腾讯云cos存储在Egg.js框架插件 -Tencent COS(Cloud Object Storage) Egg.js Plugin
 
 [![NPM version][npm-image]][npm-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
+
+[zh-image]: https://img.shields.io/badge/简体中文-red.svg
+[zh-url]: https://github.com/onewalker/egg-cos/blob/cur-publish/README_zh.md
 
 [npm-image]: https://img.shields.io/npm/v/@onewalker/egg-cos.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@onewalker/egg-cos
@@ -14,9 +20,10 @@
 [download-image]: https://img.shields.io/npm/dm/@onewalker/egg-cos.svg?style=flat-square
 [download-url]: https://www.npmjs.com/package/@onewalker/egg-cos
 
-腾讯云存储在Egg.js框架插件 Tencent COS(Cloud Object Storage) Egg.js Plugin
-
-This plugin integrates Tencent Cloud Object Storage (COS) with the [Egg.js](https://eggjs.org/en/tutorials/index.html) framework, a Node.js framework developed by Alibaba Group. It supports two methods for file uploads: file mode and stream mode.
+This plugin integrates Tencent Cloud Object Storage (COS) with the [Egg.js](https://eggjs.org/en/tutorials/index.html) framework, a Node.js framework developed by Alibaba Group. 
+It supports two methods for file uploads: 
+- file mode：its better for small file is temporarily stored on the server during processing;
+- stream mode: for large files, server friendly;
 
 Initially, I attempted to contribute the stream mode functionality to another project, but did not receive a response from the owner. Therefore, I decided to release this plugin to the community.
 
