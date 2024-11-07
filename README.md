@@ -2,25 +2,23 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/@onewalker/egg-cos.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@onewalker/egg-cos
 [codecov-image]: https://img.shields.io/codecov/c/github/onewalker/egg-cos.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/onewalker/egg-cos?branch=master
-[david-image]: https://img.shields.io/david/onewalker/egg-cos.svg?style=flat-square
-[david-url]: https://david-dm.org/onewalker/egg-cos
+[codecov-url]: https://codecov.io/github/onewalker/egg-cos?branch=cur-publish
 [snyk-image]: https://snyk.io/test/npm/@onewalker/egg-cos/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/@onewalker/egg-cos
 [download-image]: https://img.shields.io/npm/dm/@onewalker/egg-cos.svg?style=flat-square
 [download-url]: https://www.npmjs.com/package/@onewalker/egg-cos
 
-腾讯云存储在eggjs框架中的使用。
+腾讯云存储在Egg.js框架插件 Tencent COS(Cloud Object Storage) Egg.js Plugin
 
-This is a plugin for tencent cos(cloud object storage) implement in [eggjs](https://eggjs.org/en/tutorials/index.html)( a Node.js framework published by Alibaba Group). It is achieved the two ways,file modle and stream model, in uploading the files.
-Primarily, I tired to merge my addtion of stream ways to the other project, while it isn't respoded by the owner. I decide to publish it to the community.
+This plugin integrates Tencent Cloud Object Storage (COS) with the [Egg.js](https://eggjs.org/en/tutorials/index.html) framework, a Node.js framework developed by Alibaba Group. It supports two methods for file uploads: file mode and stream mode.
+
+Initially, I attempted to contribute the stream mode functionality to another project, but did not receive a response from the owner. Therefore, I decided to release this plugin to the community.
 
 ## Install
 
