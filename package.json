@@ -11,7 +11,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "cos-nodejs-sdk-v5": "^2.2.6"
+    "cos-nodejs-sdk-v5": "^2.14.7"
   },
   "devDependencies": {
     "autod": "^2.4.2",
